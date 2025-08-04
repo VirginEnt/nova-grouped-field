@@ -25,7 +25,7 @@ class Grouped extends Field
         $this->exceptOnForms();
     }
 
-    public function resolveForDisplay($resource, $attribute = null)
+    public function resolveForDisplay($resource, ?string $attribute = null): void
     {
         parent::resolve($resource, $attribute);
 
