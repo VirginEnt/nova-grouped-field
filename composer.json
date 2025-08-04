@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "virginent\\NovaGroupedField\\FieldServiceProvider"
+                "VirginEnt\\NovaGroupedField\\FieldServiceProvider"
             ]
         }
     },
