@@ -1,6 +1,6 @@
 <?php
 
-namespace Dillingham\NovaGroupedField;
+namespace VirginEnt\NovaGroupedField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
