@@ -1,5 +1,5 @@
 {
-    "name": "dillingham/nova-grouped-field",
+    "name": "virginent/nova-grouped-field",
     "description": "Combine Nova fields into one output",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dillingham\\NovaGroupedField\\": "src/"
+            "virginent\\NovaGroupedField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dillingham\\NovaGroupedField\\FieldServiceProvider"
+                "virginent\\NovaGroupedField\\FieldServiceProvider"
             ]
         }
     },
