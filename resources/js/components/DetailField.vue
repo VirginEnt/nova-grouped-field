@@ -34,18 +34,21 @@
     </div>
 </template>
 
-<script>
-export default {
-  props: ['resource', 'resourceName', 'resourceId', 'field'],
+<script setup>
+import { computed } from 'vue';
+const props = defineProps({
+  resource: Object,
+  resourceName: String,
+  resourceId: [String, Number],
+  field: Object
+});
 
-  methods: {
-      showNonLinkValue(field) {
-          if(field.component == 'date' && field.format) {
-              return moment(field.value).format(field.format);
-          } else {
-              return field.value;
-          }
-      }
+function showNonLinkValue(field) {
+  // Nova 5 uses dayjs, not moment
+  if (field.component === 'date' && field.format && typeof dayjs !== 'undefined') {
+    return dayjs(field.value).format(field.format);
+  } else {
+    return field.value;
   }
-};
+}
 </script>
